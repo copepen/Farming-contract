@@ -1,0 +1,26 @@
+{
+  "name": "GamyFi",
+  "version": "1.0.0",
+  "description": "GamyFi Farming Contract",
+  "main": "config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:rinkeby": "truffle migrate --network rinkeby --skip-dry-run",
+    "deploy:mainnet": "truffle migrate --network mainnet --skip-dry-run",
+    "verify:rinkeby": "truffle run verify GamyFiFarm --network rinkeby",
+    "verify:mainnet": "truffle run verify GamyFiFarm --network mainnet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "bignumber.js": "^9.0.1",
+    "chai": "^4.3.4",
+    "truffle-plugin-verify": "^0.5.4"
+  }
+}
